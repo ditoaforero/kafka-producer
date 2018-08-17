@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "a657ce4d-cf95-461c-b2ea-712fc9473523",
+		"name": "Kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EnviarMensaje",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"topic\":\"kafka_test_topic\",\n\t\"message\": {\n\t\t\"nombres\": \"Eduardo Timoteo\",\n\t\t\"primerApellido\": \"Arevalo\",\n\t\t\"segundoApellido\": \"Forero\",\n\t\t\"fechaNacimiento\": \"1991-10-20\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "localhost:5001/sendMsg",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"sendMsg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
