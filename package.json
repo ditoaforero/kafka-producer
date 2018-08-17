@@ -1,0 +1,16 @@
+{
+  "name": "kafka",
+  "version": "1.0.0",
+  "description": "Proyecto de prueba de productor y consumidor de kafka desde node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Arevalo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "kafka-node": "^2.6.1"
+  },
+  "devDependencies": {}
+}
